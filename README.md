@@ -4,4 +4,8 @@ Steals lastpass passwords from sites that allow you to write to subdomains. Last
 
  - https://how2virus.neocities.org
  - https://fervent-tesla-debed1.netlify.com
- - 98% of university sites (https://department.university.edu/homes/~user)
+ - 98% of university websites (https://department.university.edu/homes/~user)
+
+# Contributing
+
+If you find other vulnerable sites, feel free to send a PR adding your proof of concept to the above list.
